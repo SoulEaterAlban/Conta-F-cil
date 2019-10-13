@@ -3,7 +3,7 @@
 
 
     //Cadastro de produtos
-    <string name="nome_prod"></string>
+    <string name="nome_prod">Nome do Produto</string>
     <string name="qtd_prod"></string>
     <string name="potenc_prod"></string>
     <string name="dias_uso"></string>
