@@ -34,7 +34,7 @@
 23        android:theme="@style/AppTheme" >
 23-->C:\Users\Jhone\Conta-Facil\ContaFacil\app\src\main\AndroidManifest.xml:14:9-40
 24        <activity android:name="br.com.street.contafacil.CadProduto" />
-24-->C:\Users\Jhone\Conta-Facil\ContaFacil\app\src\main\AndroidManifest.xml:15:9-57
+24-->C:\Users\Jhone\Conta-Facil\ContaFacil\app\src\main\AndroidManifest.xml:15:9-48
 24-->C:\Users\Jhone\Conta-Facil\ContaFacil\app\src\main\AndroidManifest.xml:15:19-45
 25        <activity android:name="br.com.street.contafacil.MainActivity" >
 25-->C:\Users\Jhone\Conta-Facil\ContaFacil\app\src\main\AndroidManifest.xml:16:9-22:20

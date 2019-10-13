@@ -12,5 +12,7 @@
 
     //Activity Main
     <string name="acess_cadProd">Cadastrar Produto</string>
+    <string name="title_activity_dash_prod">DashProd</string>
+    <string name="submit">ir</string>
 
 </resources>
