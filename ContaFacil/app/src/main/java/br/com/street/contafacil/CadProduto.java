@@ -8,13 +8,19 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+
+import java.security.PrivateKey;
+
 public class CadProduto extends AppCompatActivity {
 
-    private EditText edtNome_prod;
-    private EditText edtQtd_Prod;
-    private EditText edtPotenc_Prod;
-    private EditText edtDias_Uso;
-    private EditText edtTempo_uso;
+
+    private TextInputLayout edtNome_prod;
+    private TextInputLayout edtQtd_Prod;
+    private TextInputLayout edtPotenc_Prod;
+    private TextInputLayout edtDias_Uso;
+    private TextInputLayout edtTempo_uso;
 
 
     @Override
@@ -22,11 +28,11 @@ public class CadProduto extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cad_produto);
 
-        edtNome_prod    = (EditText) findViewById(R.id.edtNome_prod);
-        edtQtd_Prod     = (EditText) findViewById(R.id.edtQtd_Prod);
-        edtPotenc_Prod  = (EditText) findViewById(R.id.edtPotenc_Prod);
-        edtDias_Uso     = (EditText) findViewById(R.id.edtDias_Uso);
-        edtTempo_uso    = (EditText) findViewById(R.id.edtTempo_uso);
+        edtNome_prod    = findViewById(R.id.edtNome_prod);
+        edtQtd_Prod     = findViewById(R.id.edtQtd_Prod);
+        edtPotenc_Prod  = findViewById(R.id.edtPotenc_Prod);
+        edtDias_Uso     = findViewById(R.id.edtDias_Uso);
+        edtTempo_uso    = findViewById(R.id.edtTempo_uso);
 
     }
     public void sendMessage(View view){
@@ -34,6 +40,13 @@ public class CadProduto extends AppCompatActivity {
         Intent intent2 = new Intent (this, MainActivity.class);
         startActivity(intent2);
 
-        Toast.makeText(this, edtNome_prod.getText()+" cadastrado com sucesso", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, edtNome_prod.getEditText().getText().toString()+
+                " cadastrado com sucesso", Toast.LENGTH_LONG).show();
+    }
+    public void DescartarProd(View view){
+        Intent intent2 = new Intent (this, MainActivity.class);
+        startActivity(intent2);
+
+        Toast.makeText(this, "Produto descartado", Toast.LENGTH_SHORT).show();
     }
 }

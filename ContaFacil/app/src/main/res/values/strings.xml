@@ -14,5 +14,12 @@
     <string name="acess_cadProd">Cadastrar Produto</string>
     <string name="title_activity_dash_prod">DashProd</string>
     <string name="submit">ir</string>
+    <string name="salvar">Salvar</string>
+    <string name="nome_do_produto">Nome do produto</string>
+    <string name="quantidade_do_produto">Quantidade do produto</string>
+    <string name="potencia_do_produto_w">Potência do produto(W)</string>
+    <string name="dias_de_uso">Dias de uso</string>
+    <string name="tempo_em_uso">Tempo em uso</string>
+    <string name="descartar">Descartar</string>
 
 </resources>

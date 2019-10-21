@@ -6,96 +6,111 @@
     android:layout_height="match_parent"
     android:baselineAligned="false"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".CadProduto">
 
-    <TextView
-        android:id="@+id/txtNome_Prod"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nome do Produto"
-        android:textSize="22sp" />
-
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtNome_prod"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:baselineAligned="false"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textSize="18sp"
-        tools:targetApi="o" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/txtQtd_Prod"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Quantidade"
-        android:textSize="22sp" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nome_do_produto"
+            android:inputType="text" />
 
-    <EditText
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtQtd_Prod"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/qtd_prod"
-        android:inputType="number"
-        android:textSize="18sp" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/txtPotencia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Potência (W)"
-        android:textSize="22sp" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/quantidade_do_produto"
+            android:inputType="number" />
 
-    <EditText
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtPotenc_Prod"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/potenc_prod"
-        android:inputType="number"
-        android:textSize="18sp" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/txtDiasUso"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Dias de Uso"
-        android:textSize="22sp" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/potencia_do_produto_w"
+            android:inputType="number" />
 
-    <EditText
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtDias_Uso"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/dias_uso"
-        android:inputType="number"
-        android:textSize="18sp" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/txtTempo_Uso"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tempo de uso (Hrs)"
-        android:textSize="22sp" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dias_de_uso"
+            android:inputType="number" />
 
-    <EditText
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtTempo_uso"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/tempo_uso"
-        android:inputType="number"
-        android:textSize="18sp" />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button3"
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tempo_em_uso"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sendMessage"
+                android:text="@string/salvar" />
+         -->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="sendMessage"
-        android:text="@string/button_send" />
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="344dp"
+            android:onClick="DescartarProd"
+            android:text="@string/descartar"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="344dp"
+            android:layout_marginEnd="20dp"
+            android:onClick="sendMessage"
+            android:text="@string/salvar"
+            app:backgroundTint="@android:color/holo_green_dark" />
+
+
+    </RelativeLayout>
 
 </LinearLayout>
